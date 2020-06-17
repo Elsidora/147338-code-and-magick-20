@@ -1,6 +1,10 @@
 'use strict';
 
 (function () {
+  var CoordinatesDefault = {
+    START_LEFT: 50,
+    START_TOP: 80
+  };
 
   var setupOpen = document.querySelector('.setup-open');
   var setup = document.querySelector('.setup');
@@ -30,6 +34,8 @@
   function closeSetup() {
     setup.classList.add('hidden');
     document.removeEventListener('keydown', onEscapePress);
+    setup.style.top = CoordinatesDefault.START_TOP + 'px';
+    setup.style.left = CoordinatesDefault.START_LEFT + '%';
   }
 
   function onEscapePress(evt) {
