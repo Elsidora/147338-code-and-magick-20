@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 (function () {
 
   var setupOpen = document.querySelector('.setup-open');

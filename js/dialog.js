@@ -44,7 +44,7 @@
       if (dragged) {
         var onClickPreventDefault = function (clickEvt) {
           clickEvt.preventDefault();
-          userAvatar.removeEventListener('click', onClickPreventDefault)
+          userAvatar.removeEventListener('click', onClickPreventDefault);
         };
         userAvatar.addEventListener('click', onClickPreventDefault);
       }
